@@ -1,0 +1,450 @@
+<app-nav-bar class="navbardash" (searchTextChanged)="onSearchTextEntered($event)"></app-nav-bar>
+<nav class="navbar navbar-expand-lg  px-3 py-1" style="place-content: center;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="place-content: center;">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="width: 100%;">
+            <b> <span class="textcolour" style="margin: 10px;margin-left: 11px;"> You have 155 new contacts added.<a
+                        href="/contactUs">click here
+                    </a>
+                    to view
+                    them.</span></b>
+        </ul>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg  px-3 py-1"
+    style="place-content: center;border-bottom:1px solid rgba(21, 24, 33, 0.25 ) ;">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="place-content: center;">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="width: 100%;">
+            <b> <span class="textcolour" style="margin: 10px;margin-left: 11px"> You have 25 unassigned Task.<a
+                        href="">click here </a>
+                    to view
+                    them.</span></b>
+        </ul>
+    </div>
+</nav>
+
+<div class="px-4">
+    <div class="row">
+        <div class="col-4 textcolour" style="width:318px;">
+            <div class="recentstyle" style="padding-top: 15px;padding-bottom: 15px;">
+                <b style="font-size:18px;color: #1B3468;">Recent Contacts</b>
+            </div>
+
+        </div>
+        <div class="col-8 textcolour" style="width:1007px;">
+            <div class="recentstyle">
+                <div class="row">
+                    <div class="col-2">
+                        <b style="position:relative;top:28%;left:9%;font-size:18px;color: #1B3468;">Tasks</b>
+                    </div>
+                    <div class="col-6"
+                        style="position: relative;margin-top:15px;left:26%;font-style: normal;font-weight: 400;font-size: 14px;line-height: 17px;color: #1B3468;;">
+                        0 Due This Week / 0 Due Today / 8 Past Due
+                    </div>
+                    <div class="col-2 ">
+                        <ng-select placeholder="Sort By"
+                            style="padding:8px;left: 36%;position: relative;height: 38px;width: 122px;border-radius: 10px;margin-top: -1px;"
+                            [items]="sortby" bindLabel="name" bindValue="id">
+                        </ng-select>
+
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="task-button" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop" (click)="openPopup()" style="position: relative;left:10%;">
+                            <span style="position: relative;right: 8px;">New Task</span> <img
+                                style="position: relative;bottom: 1px;" src="../../../assets/images/plus-icon.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-4" style="width:318px;">
+            <div class="recentstyle1">
+                <div class="row " style="padding-top: 20px;padding-bottom: 10px;">
+                    <div class="col-12 " style="margin-left:11px;">
+                        <div>
+                            <div class="row tab">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="../../../assets/images/profile-logo.png  "
+                                                style="width: 47px;position: relative;top: 6px;">
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="col-12" style="position: relative;top: 12px;left: 10px;">
+                                                <div class="row text-center hover-color"
+                                                    style="color: #4C5258;margin-left: 1px;bottom: 7px;position: relative;">
+                                                    Jerry M. Kelly<br>
+                                                </div>
+                                                <div class="row">
+                                                    <small style="color: #4C5258;position: relative;bottom: 6px;">
+                                                        Whitlocks Auto
+                                                        Supply</small>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row tab">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="../../../assets/images/Ellipse 3 (1).png  "
+                                                style="width: 47px;position: relative;top: 6px;">
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="col-12" style="position: relative;top: 12px;left: 10px;">
+                                                <div class="row text-center hover-color"
+                                                    style="color: #4C5258;margin-left: 1px;bottom: 5px;position: relative;">
+                                                    Lance G. Crespin<br>
+                                                </div>
+                                                <div class="row">
+                                                    <small
+                                                        style="color: #4C5258;position: relative;bottom: 6px;">Fedco</small>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row tab">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="../../../assets/images/Ellipse 3 (2).png  "
+                                                style="width: 47px;position: relative;top: 6px;">
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="col-12"
+                                                style="color: #4C5258;position: relative;top: 12px;left: 10px;">
+                                                <div class="row text-center hover-color"
+                                                    style="margin-left: 1px;bottom: 5px;position: relative;">
+                                                    Shanna J. Darby<br>
+                                                </div>
+                                                <div class="row">
+                                                    <small
+                                                        style="color: #4C5258;position: relative;bottom: 6px;">Friendly
+                                                        Advic</small>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row tab">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="../../../assets/images/Ellipse 3 (3).png  "
+                                                style="width: 47px;position: relative;top: 6px;">
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="col-12" style="position: relative;top: 12px;left: 10px;">
+                                                <div class="row text-center hover-color"
+                                                    style="color: #4C5258; margin-left: 1px;bottom: 5px;position: relative;">
+                                                    Linda M. Maddox<br>
+                                                </div>
+                                                <div class="row">
+                                                    <small
+                                                        style="color: #4C5258;position: relative;bottom: 6px;">Anthony's</small>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row tab">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="../../../assets/images/Ellipse 3.png  "
+                                                style="width: 47px;position: relative;top: 6px;">
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="col-12" style="position: relative;top: 12px;left: 10px;">
+                                                <div class="row text-center hover-color"
+                                                    style="color: #4C5258;margin-left: 1px;bottom: 5px;position: relative;">
+                                                    Ronald A. Clouse<br>
+                                                </div>
+                                                <div class="row">
+                                                    <small
+                                                        style="color: #4C5258;position: relative;bottom: 6px;">Lindsley's
+                                                        Lumber</small>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-8" style="width:1007px;">
+            <div class="recentstyle1 text-center ">
+                <div class="row" style="border-bottom: 1px solid rgba(21, 24, 33, 0.25 );padding-bottom: 25px;">
+                    <div *ngFor="let contact of Contacts| paginate :{itemsPerPage:6,currentPage:p} " class="col-4">
+                        <div *ngIf="searchText ==='' || contact.firstname.toLowerCase().includes(searchText) "
+                            class="tabvertical recentstyle">
+                            <div class="row"
+                                style="border-bottom: 1px solid rgba(21, 24, 33, 0.25 ) ;padding-bottom: 30px ">
+                                <div class="col-12 mt-4" style="position: relative;">
+                                    <div class="col-0" style="position: relative;">
+                                        <b>Carter and Company, LLC</b>
+                                    </div>
+                                    <div class="col-0" style="position:absolute;right: 7%;bottom: 10%;">
+                                        <img src="../../../assets/images/redirect-icon.png" class="image-change">
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-1">
+                                    (402) 727-9177
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-2">
+                                        <i style="position: relative;top:15%;left:60%"><img
+                                                src="../../../assets/images/cal-icon.png" alt=""></i>
+                                    </div>
+                                    <div class="col-10" style="padding: 0px;padding-left: 4px;">
+                                        <input style="padding:0px;padding-left: 10px;font-size: inherit;"
+                                            class="form-control picker3 " type="datetime-local" mwlFlatpickr
+                                            [dateFormat]="'d/m/y H:i'" placeholder="Select Date" [enableTime]="true" />
+                                    </div>
+
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-2">
+                                        <i style="position: relative;top:20%;left:60%"><img
+                                                src="../../../assets/images/phone-call-icon.png" alt=""></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <ng-select class="custom"
+                                            style="position:relative;top:9%;right:4%;min-height: 0%;height: 30px;"
+                                            placeholder="Phone Call" [items]="cars" bindLabel="name" bindValue="id">
+                                        </ng-select>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-2">
+                                        <i style="position: relative;top:23%;left:60%"><img
+                                                src="../../../assets/images/icon.png" alt=""></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <ng-select class="custom"
+                                            style="position:relative;top:9%;right:4%;min-height: 0%;height: 30px;"
+                                            placeholder="Priority" [items]="icon" bindLabel="name" bindValue="id">
+                                        </ng-select>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-2">
+                                        <i style="position: relative;top:25%;left:60%"><img
+                                                src="../../../assets/images/post-icon.png" alt=""></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <ng-select class="custom"
+                                            style="position:relative;top:9%;right:4%;min-height: 0%;height: 30px;"
+                                            placeholder="Post" [items]="manager" bindLabel="name" bindValue="id">
+                                        </ng-select>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-2">
+                                        <i style="position: relative;top:13%;left:60%"><img
+                                                src="../../../assets/images/addres-icon.png" alt=""></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <textarea
+                                            style="position:relative;top:9%;right:4%;padding: 0px;width: 217px;height: 110px;padding-left: 10px;"
+                                            class="form-control"
+                                            placeholder="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                                            value="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"></textarea>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="bootom row mt-2">
+                                <div class="col" style="position: relative;left: 35px;">
+                                    <img src=" ../../../assets/images/check-icon.png" class="default-image">
+                                    <img src="../../../assets/images/check-tick-icon.png" class="image-change">
+                                </div>
+                                <div class="col">
+                                    <img src="../../../assets/images/email-icon.png" class="default-image">
+                                    <img src="../../../assets/images/email-tick-icom.png" class="image-change">
+                                </div>
+                                <div class="col" style="position: relative;right: 35px;">
+                                    <img src="../../../assets/images/close-icon.png" class="default-image">
+                                    <img src="../../../assets/images/close-tick-icon.png" class="image-change">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button class="task-button"
+                            style="float:right;height:35px;width:182px;margin-top:3%;background-color:#2096C8;">View as
+                            search
+                            result</button>
+                    </div>
+                    <div class="col-12 mb-5">
+                        <div class="row">
+                            <div class="col">
+                                <select class="form-select select2" style="width: auto;left: 10px;position: relative;">
+                                    <option selected>30</option>
+                                    <option>50</option>
+                                    <option>100</option>
+                                    <option>150</option>
+                                </select>
+                            </div>
+                            <div class="col-8" style="right:21%;position: relative;">
+                                <pagination-controls (pageChange)="p = $event"
+                                    class="my-pagination text-center mt-2"></pagination-controls>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" data-bs-focus="false" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" [ngStyle]="{'display':displayStyle}" style="left: 100px;top: 100px;"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" style="margin: 0px;padding: 0;">
+        <div class="modal-content" style="width: 1153px;">
+            <div class="modal-header" style="background: #F7F8FA;border-radius: 10px 10px 0px 0px;border: none;">
+                <h3 style="color: #1B3468;font-weight: 500;font-size: 18px;position: relative;left:3px;top: 7px;"
+                    class="modal-title">
+                    New Task</h3>
+                <span style="position: absolute;left:77%;color: #1B3468;font-weight: 500;font-size: 14px;">Created
+                    By : Florida Manager</span>
+                <img style="position: relative;right: 22px;" (click)="closePopup()" data-bs-dismiss="modal"
+                    aria-label="Close" src="../../../assets/images/close-popup-icon.png" alt="">
+            </div>
+            <div class="modal-body">
+                <div class="row" style="justify-content: center;">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="space">
+                                <input class="form-control picker1" style="height:40px;width:200px;" type="text"
+                                    mwlFlatpickr [dateFormat]="'d/m/y H:i'" [enableTime]="true"
+                                    placeholder="Due Date" />
+
+                            </div>
+                            <div class="space">
+                                <input class="form-control" style="height:40px;width:200px;"
+                                    placeholder="Choose Contact" type="text">
+                            </div>
+                            <div class="space">
+                                <ng-select class="customselect" placeholder="Event Type" [items]="cars" bindLabel="name"
+                                    bindValue="id">
+                                </ng-select>
+                            </div>
+                            <div class="space">
+                                <ng-select class="customselect" placeholder="Assigned To" [items]="manager"
+                                    bindLabel="name" bindValue="id">
+                                </ng-select>
+                            </div>
+                            <div class="space">
+                                <ng-select class="customselect" placeholder="Priority" [items]="icon" bindLabel="name"
+                                    bindValue="id">
+                                </ng-select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <textarea class="form-control" placeholder="Description" style="width:98%;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="row">
+                            <div style="width: 15%;">
+                                <input style="bottom: 2px;position: relative;" class="form-check-input" name="drop"
+                                    type="checkbox" value="option1" id="inlineRadio1">
+                                <span style="margin-left:10px;">Notify User</span>
+                            </div>
+                            <div style="width: 25%;">
+                                <input style="bottom: 2px;position: relative;" class="form-check-input" name="drop"
+                                    type="checkbox" value="option2" id="inlineRadio2" (click)="open()">
+                                <span style="margin-left:10px;">Add to Google calendar</span>
+
+                            </div>
+                            <div style="width: 31%;">
+                                <input style="bottom: 2px;position: relative;" class="form-check-input" name="drop"
+                                    type="checkbox" value="option3" id="inlineRadio3">
+                                <span style="margin-left:10px;">Add to my calendar (Outlook & iCal)</span>
+                            </div>
+                            <div style="width: 11%;">
+                                <input style="bottom: 2px;position: relative;" class="form-check-input"
+                                    (click)="opendate()" name="drop" type="checkbox" value="option4" id="inlineRadio4">
+                                <span style="margin-left:10px;">Recur Task</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div [ngStyle]="{'display':display,'border-bottom':borderbottom,'padding-bottom':padbot}"
+                                style="padding-top: 10px;">
+                                <small> According to which time zone, your event should be saved in google
+                                    calendar?Please note
+                                    that CRM will still show you appropriate EST times on your tasks.</small>
+                                <ng-select placeholder="Time Zone" style="width: 200px; margin-top: 10px;"
+                                    [items]="timezone" bindLabel="name" bindValue="id">
+                                </ng-select>
+
+                            </div>
+                            <div [ngStyle]="{'display':displaydate}" class="col-12">
+                                <div class="row">
+                                    <div class="col">
+                                        <ng-select placeholder=" Repeat Task" style="width: 200px; margin-top: 15px;"
+                                            [items]="timezone" bindLabel="name" bindValue="id">
+                                        </ng-select>
+                                    </div>
+                                    <div class="col">
+                                        <input style=" position: relative;right: 65%;width: 200px; margin-top: 15px;margin-left:
+                                         7px;" placeholder="Date Time" class="form-control picker2" type="date"
+                                            mwlFlatpickr [dateFormat]="'d/m/y H:i'" [enableTime]="true" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="task-button" style="background-color: #2096C8;height:35px;width:132px;">
+                    Save New Task
+                </button>
+                <a style="cursor: pointer ;" data-bs-dismiss="modal" (click)="closePopup()">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>

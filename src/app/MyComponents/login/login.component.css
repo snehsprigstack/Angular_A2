@@ -1,0 +1,27 @@
+.loginlogo {
+  margin-top: 100px;
+  margin-left: 35px;
+}
+.mb3 {
+  padding: 10%;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+:host {
+  height: 100%;
+}
+.photo {
+  object-fit: contain;
+}
+.card {
+  width: 20rem;
+  margin: 0 auto;
+}
+#buttonDiv {
+  background-color: white;
+  height: 45px;
+  border-radius: 10px;
+  color: #344054;
+  border-color: #99969640;
+}

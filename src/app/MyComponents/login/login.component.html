@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-lg-6 col-md-12">
+            <a>
+                <img class="loginlogo" src="../../../assets/images/login.png">
+            </a>
+
+        </div>
+        <div class="col-12 col-lg-6 col-md-12 mb3">
+            <div class="text-center">
+                <a>
+                    <img height="25px" src="../../../assets/images/navbar-logo.png">
+                </a>
+            </div><br>
+            <form [formGroup]="login">
+                <h4 class="text-center" style="color: #1b3468;"><b>Login to account</b></h4><br>
+
+                <div class="col-12 mb-2" style="position: relative;">
+                    <label style="color: #4C5258 !important;"><b>User Name</b></label>
+                    <input formControlName="UserName" type="text" class="form-control mt-2"
+                        placeholder="debra.holt@example.com">
+                    <span style="position: absolute;top: 55%;right: 3%;"><i
+                            class="fa-regular fa-circle-xmark"></i></span>
+
+                </div>
+                <small style="color: red;"
+                    *ngIf="login.controls['UserName'].dirty && login.hasError('required','UserName')">
+                    *Login Id Required! </small>
+                <div class="col-12 mb-2" style="position: relative;">
+                    <label style="color: #4C5258 !important;"><b>Password</b></label>
+                    <input formControlName="Password" [type]="type" placeholder="••••••••" class="form-control mt-2">
+                    <span style="position: absolute;top: 62%;right: 3%;" (click)="hideshowpass()"
+                        class="fa {{eyeIcon}}"></span>
+                </div>
+                <small style="color: red;"
+                    *ngIf="login.controls['Password'].dirty && login.hasError('required','Password')">
+                    *Password Required! </small>
+                <div class="form-check form-switch mb-1">
+                    <input type="checkbox" class="form-check-input" id="customSwitch1">
+                    <label class="form-check-label" for="customSwitch1">Remember Me</label>
+                    <a id="forget" (click)="openPopup()"
+                        style="text-decoration: none;cursor: pointer; margin-left: 24%;color: #1b3468;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal" class="font-weight-bold">Forget
+                        Password?</a>
+                </div>
+                <button style="background-color: #2096C8;border-color: white;height: 45px;border-radius: 10px;"
+                    class="btn btn-primary mt-4 col-12" (click)="verify()">Login</button>
+                <!-- <button 
+                    style="background-color: white;height: 45px;border-radius: 10px;color: #344054;border-color:#99969640;"
+                    class="btn btn-block google-sign-in mt-4 col-12"><a><img class="p-1"
+                            src="../../../assets/images/Google.png"></a>Sign
+                    in with
+                    Google</button> -->
+
+                <button id="buttonDiv"
+                    style="border: none;background-color: white;margin-top: 25px;margin-left: 48px;">Login With
+                    Google</button>
+            </form>
+
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalLabel"><span style="font-size: 25px;font-weight: 780;">Forgot
+                            Your Password?</span><br>
+                        <small>Please provide your email we will send the reset link</small>
+                    </p>
+                    <button type="button" class="btn-close" (click)="closePopup()" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group pt-3">
+                        <div class="input-field"><span class="fa fa-user p-2"></span>
+                            <input type="text" [(ngModel)]="resetPasswordEmail"
+                                (ngModelChange)="checkValidEmail($event)" placeholder="Email">
+                        </div>
+                    </div>
+                    <small *ngIf="!resetPasswordEmail" class="text-danger">*Email is required!</small>
+                    <small *ngIf="!isEmailValid && resetPasswordEmail" class="text-danger">*Email is invalid!</small>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" (click)="closePopup()">
+                        Close
+                    </button>
+                    <button id="closeBtn" type="button" (click)="confirmToSend()" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>

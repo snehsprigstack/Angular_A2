@@ -1,0 +1,26 @@
+.tabvertical:hover {
+  transform: scale(1.1);
+}
+.recentstyle {
+  padding: inherit;
+  border-bottom: 1px solid rgba(21, 24, 33, 0.25);
+  border-left: 1px solid rgba(21, 24, 33, 0.25);
+  border-right: 1px solid rgba(21, 24, 33, 0.25);
+}
+.recentstyle1 {
+  padding: inherit;
+  border-bottom: 1px solid rgba(21, 24, 33, 0.25);
+  border-left: 1px solid rgba(21, 24, 33, 0.25);
+  border-right: 1px solid rgba(21, 24, 33, 0.25);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.tabvertical {
+  background-color: white;
+  width: 300px;
+  height: 400px;
+  border: 1px solid rgba(21, 24, 33, 0.25);
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}

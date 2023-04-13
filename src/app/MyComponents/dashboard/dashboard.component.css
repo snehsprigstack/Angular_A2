@@ -1,0 +1,340 @@
+.textcolour {
+  color: #4c5258;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.hover-color:hover {
+  color: red;
+}
+.tabvertical:hover .ng-select.custom ::ng-deep .ng-arrow-wrapper .ng-arrow {
+  border-style: solid;
+}
+.tabvertical:hover .ng-select.custom ::ng-deep .ng-select-container {
+  border: 1px solid rgba(21, 24, 33, 0.25);
+}
+.ng-select.custom ::ng-deep .ng-arrow-wrapper .ng-arrow {
+  border-style: none;
+}
+.ng-select.custom ::ng-deep .ng-select-container {
+  min-height: 0px;
+  border-radius: 7px;
+  border: none;
+  height: 30px;
+  width: 217px;
+  transition: none;
+}
+.ng-select.customselect ::ng-deep .ng-select-container {
+  min-height: 0px;
+  border-radius: 7px;
+  height: 40px;
+  width: 200px;
+  transition: none;
+  outline: none;
+}
+.ng-select.custom ::ng-deep .ng-dropdown-panel {
+  text-align: left;
+  font-size: small;
+}
+.odd {
+  color: green;
+  font-weight: bolder;
+}
+.even {
+  color: red;
+  font-style: italic;
+}
+.ng-select.custom ::ng-deep .ng-clear-wrapper {
+  display: none;
+}
+.e-input-group-icon.e-date-icon::before,
+*.e-control-wrapper .e-input-group-icon.e-date-icon::before {
+  display: none;
+}
+.cdk-overlay-container {
+  z-index: 5000 !important;
+}
+.tabvertical:hover *.e-control-wrapper .e-input-group-icon.e-date-icon::before {
+  display: inline-block;
+}
+.e-datetime-wrapper .e-time-icon.e-icons::before {
+  display: none !important;
+}
+.tabvertical:hover.e-datetimepicker.e-input-group {
+  border: none;
+}
+.e-datetime-wrapper .e-input-group-icon.e-time-icon {
+}
+.e-input-group:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper:not(.e-float-icon-left) {
+  border: none;
+}
+.e-input-group:not(.e-float-icon-left),
+.e-input-group.e-control-wrapper:focus {
+  border: none;
+}
+.tabvertical :hover .datepicker {
+  border: 1px solid rgba(21, 24, 33, 0.25);
+  transition: none;
+}
+.datepicker ::ng-deep .mdc-line-ripple::after {
+  border-bottom-width: 0 !important;
+}
+.e-input-group:not(.e-float-icon-left).e-error:not(.e-float-input)::after,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left).e-error:not(
+    .e-float-input
+  )::after,
+.e-input-group:not(.e-float-icon-left):not(.e-float-input).e-input-focus::after,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(
+    .e-float-input
+  ).e-input-focus::after {
+  background: none;
+  border: none;
+}
+.e-input-group:not(.e-float-icon-left).e-error:not(.e-float-input)::before,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left).e-error:not(
+    .e-float-input
+  )::before,
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group.e-control-wrapper:not(.e-disabled):not(
+    .e-float-icon-left
+  )::before {
+  background: none;
+  border: none;
+}
+
+.form-control[_ngcontent-oon-c35] {
+  box-shadow: none;
+}
+.e-control,
+.e-control [class^="e-"],
+.e-control [class*=" e-"] {
+  border: none;
+}
+.tab {
+  background-color: white;
+  height: 60px;
+  border: 1px solid rgba(21, 24, 33, 0.25);
+
+  border-radius: 8px;
+  width: 270px;
+  margin-bottom: 20px;
+}
+.tab1:hover {
+  background-color: rgb(164, 164, 252);
+  color: white;
+}
+.tab1 {
+  background-color: white;
+  height: 100px;
+  border: 1px solid #1b3468;
+  padding: 1px;
+  margin: 10px;
+  border-radius: 6px;
+  font-size: small;
+}
+.tabvertical:hover {
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2);
+  width: 290px;
+  height: 431px;
+}
+.tabvertical:hover .image-change {
+  display: inline;
+}
+.tabvertical:hover .default-image {
+  display: none;
+}
+.tabvertical:hover input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  line-height: 1;
+  transition: none;
+  width: 217px;
+  height: 30px;
+}
+.tabvertical:hover textarea {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: none;
+  overflow-y: scroll;
+  resize: none;
+  background-image: none;
+}
+.tabvertical:hover select {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-image: var(--bs-form-select-bg-img),
+    var(--bs-form-select-bg-icon, none);
+  transition: none;
+  width: 217px;
+  height: 30px;
+  padding-top: 1px;
+  padding-left: 13px;
+  padding-bottom: 0px;
+}
+.form-control {
+  box-shadow: none;
+}
+.form-select {
+  box-shadow: none;
+}
+.form-check-input {
+  box-shadow: none;
+}
+.tabvertical select {
+  border: none;
+  text-align: left;
+  background-image: none;
+  width: 217px;
+  height: 30px;
+  outline: 0px;
+  padding-top: 1px;
+  padding-left: 13px;
+  padding-bottom: 0px;
+}
+.task-button {
+  color: white;
+  background-color: #1b3468;
+  height: 38px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+  width: 112px;
+  border-radius: 5px;
+}
+.form-check-input:checked {
+  background-color: #1b3468;
+  border-color: #1b3468;
+}
+.ng-dropdown-panel.ng-select-bottom {
+  text-align: left;
+  font-size: small;
+}
+.tab:hover {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.tab:hover .hover-color {
+  color: #1b3468 !important;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.tabvertical {
+  background-color: white;
+  width: 290px;
+  height: 431px;
+  border: 1px solid rgba(21, 24, 33, 0.25);
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 6px;
+  border-radius: 8px;
+}
+.recentstyle {
+  padding: inherit;
+  border-bottom: 1px solid rgba(21, 24, 33, 0.25);
+  border-left: 1px solid rgba(21, 24, 33, 0.25);
+  border-right: 1px solid rgba(21, 24, 33, 0.25);
+}
+.recentstyle1 {
+  padding: inherit;
+  border-bottom: 1px solid rgba(21, 24, 33, 0.25);
+  border-left: 1px solid rgba(21, 24, 33, 0.25);
+  border-right: 1px solid rgba(21, 24, 33, 0.25);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.image-change {
+  display: none;
+}
+.pageds {
+  border-radius: 10px;
+}
+.tabvertical input {
+  border: none;
+  text-align: left;
+  width: 217px;
+  height: 30px;
+}
+.tabvertical textarea {
+  border: none;
+  text-align: left;
+  resize: none;
+  background-image: none;
+  overflow-y: hidden;
+}
+.space {
+  width: 19.666667%;
+}
+.modal-footer {
+  justify-content: center;
+}
+.ngx-pagination .current {
+  border-radius: 7px !important;
+}
+.ngx-pagination li {
+  border: 1px solid black;
+}
+.my-pagination ::ng-deep .ngx-pagination .current {
+  border-radius: 7px !important;
+}
+.my-pagination ::ng-deep .ngx-pagination li {
+  border: 1px solid rgba(21, 24, 33, 0.25);
+  margin: 3px;
+  border-radius: 7px !important;
+}
+.my-pagination ::ng-deep .ngx-pagination .pagination-next {
+  border: none;
+  margin: 3px;
+  border-radius: 7px !important;
+}
+.my-pagination ::ng-deep .ngx-pagination .pagination-previous {
+  border: none;
+  margin: 3px;
+  border-radius: 7px !important;
+}
+
+.btn-group .dropdown-toggle::after {
+  content: url("../../../assets/images/dropdown-icon.png");
+  border: none;
+  margin-left: 25px;
+}
+.dropdown-toggle::after {
+  content: none;
+  border: none;
+  margin-left: 25px;
+}
+.form-check-input[type="radio"] {
+  border-radius: 25%;
+}
+.cdk-overlay-pane {
+  position: relative !important;
+  z-index: 9999 !important;
+}
+.owl-dt-container-inner {
+  z-index: 999;
+  position: relative;
+}
+.ng-select-container {
+  height: 38px;
+  width: 112px;
+  border-radius: 10px;
+  margin-top: -2px;
+}
+.tabvertical .dropdown-toggle {
+  width: 217px;
+  height: 30px;
+  display: flex;
+  padding: 0px;
+  padding-left: 13px;
+  border: none;
+  background-image: none;
+}
+.tabvertical :hover .dropdown-toggle {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-image: var(--bs-form-select-bg-img),
+    var(--bs-form-select-bg-icon, none);
+  transition: none;
+  width: 217px;
+  height: 30px;
+  padding-top: 1px;
+  padding-left: 13px;
+  padding-bottom: 0px;
+}

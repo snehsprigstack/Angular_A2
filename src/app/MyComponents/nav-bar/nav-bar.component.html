@@ -1,0 +1,126 @@
+<div class="row" style="position:sticky!important;top:0;width:100%;background-color:white;z-index:999;">
+    <nav class="navbar navbar-expand-lg "
+        style="place-content: center;border-bottom:1px solid rgba(21, 24, 33, 0.25 ) ;">
+        <div class="container-fluid row">
+            <div class="logo  cl3 pb-2" style="margin-left:16px;margin-right: 6%;">
+                <a class="navbar-brand pt-0 " href="/dash">
+                    <img src="assets/images/navbar-logo.png" alt="Bootstrap" width="207px" height="35px">
+                </a>
+            </div>
+            <div class="search col-5">
+                <div class="d-flex" role="search">
+                    <input class="searchIcon form-control me-2" type="text" [(ngModel)]="enteredSearchValue"
+                        (input)="onSearchTextChanged()" placeholder="Enter Keywords">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row text-center" style="justify-content: flex-end;align-items: center;">
+                    <div class="col-5">
+                        <a class="nav-link active profile" aria-current="page" href="">
+                            <b style="position: relative;left: 29px;">Florida Manager</b>
+                        </a>
+                    </div>
+                    <div class=" cl2">
+                        <a class="nav-link active profile" aria-current="page" (click)="logout()" href="">
+                            <img src="assets/images/profile-logo.png" alt="Bootstrap">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg  px-3 py-0"
+        style="place-content: center;border-bottom:1px solid rgba(21, 24, 33, 0.25 );">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="place-content: center;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="width: 100%;justify-content: center;">
+                <li class="nav-item dropdown " style="width: 13%;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="assets/images/task-icon.png" alt="Bootstrap">
+                        <span class="textcolour">Task History</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown " style="width: 13%;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../../../assets/images/contact-icon.png" alt="Bootstrap">
+                        <span class="textcolour">Contacts</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item  " style="width: 7%;">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img src="assets/images/list-icon.png" alt="Bootstrap" style="margin-right: 5px;">
+                        <span class="textcolour">List</span>
+                    </a>
+                </li>
+                <li class="nav-item " style="width: 8%;">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/query-icon.png" alt="Bootstrap" style="margin-right: 5px;">
+                        <span class="textcolour">Query</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown " style="width: 12%;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="assets/images/marketing-icon.png" alt="Bootstrap">
+                        <span class="textcolour">Marketing</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item " style="width: 10%;">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/pipeline-icon.png" alt="Bootstrap" style="margin-right: 5px;">
+                        <span class="textcolour"> Pipeline</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown  " style="width: 11%;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="assets/images/admin-icon.png" alt="Bootstrap">
+                        <span class="textcolour">Admin</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item " style="width: 11%;">
+                    <a class="nav-link" href="#">
+                        <img src="assets/images/report-icon.png" alt="Bootstrap" style="margin-right: 5px;">
+                        <span class="textcolour">Reports</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
